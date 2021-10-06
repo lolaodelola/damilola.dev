@@ -1,13 +1,19 @@
 #!/usr/bin/env ruby
 
-compile '/**/*.html' do
-  layout '/default.*'
-
+compile '/index.*' do
+  layout '/index.*'
+  filter :erb
   if item.identifier =~ '**/index.*'
     write item.identifier.to_s
   else
     write item.identifier.without_ext + '/index.html'
   end
+end
+
+compile '/posts/*.*' do
+  filter :erb
+  layout '/post.html'
+  write item.identifier.without_ext + '/index.html'
 end
 
 # This is an example rule that matches Markdown (.md) files, and filters them
