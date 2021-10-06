@@ -10,10 +10,10 @@ title: Home
   </div>
 </header>
 
-<main class="articles">
+<main class="articles col-md-11 offset-md-2">
   <% sorted_articles.each do |article| %>
     <section class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 index-post-heading">
         <h2 class="index-post-title m-auto">
           <%= article[:title] %>
         </h2>

@@ -39,6 +39,10 @@ header {
   line-height: 3em;
 }
 
+header h1, .articles .index-post-title {
+  line-height: 1em;
+}
+
 a {
   text-decoration: none;
 }
@@ -92,6 +96,10 @@ a:hover {
 
 .articles .index-post-intro {
   font-weight: 300;
+}
+
+.articles .index-post-heading {
+  max-width: 14em;
 }
 
 .tags {
