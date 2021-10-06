@@ -1,0 +1,36 @@
+---
+title: Home
+---
+
+<header class="row">
+  <div class="col-12-sm">
+    <h1 class="title m-auto">damilola in development</h1>
+    <h2 class="subtitle m-auto">a living<span class="note-indicator">*</span> digital scrapbook</h2>
+    <small class="note">*my thoughts, opinions and ideas can/will change.</small>
+  </div>
+</header>
+
+<main class="articles">
+  <% sorted_articles.each do |article| %>
+    <section class="row">
+      <div class="col-sm-4">
+        <h2 class="index-post-title m-auto">
+          <%= article[:title] %>
+        </h2>
+        <p class="tags">
+          <%#= tags_for article, base_url: "/", none_text: "", separator: " "%>
+        </p>
+      </div>
+
+      <div class="col-sm-8">
+        <p class="index-post-intro m-auto">
+          <%= article[:intro] %>
+        </p>
+        <p>
+          <%= link_to "Read more", article, class: "" %>
+        </p>
+
+      </div>
+    </section>
+  <% end %>
+</main>
