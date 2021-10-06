@@ -5,10 +5,17 @@ text_extensions: [ 'adoc', 'asciidoc', 'atom', 'coffee', 'css', 'erb', 'haml', '
 
 prune:
   auto_prune: true
+  exclude: [ '.git' ]
 
 data_sources:
   - type: filesystem
     encoding: utf-8
+deploy:
+  default:
+    kind: git
+    remote: git@github.com:lolaodelola/damilola.dev.git
+    branch: prod
+    forced: true
 
 base_url: https://damilola.dev
 site_name: damilola in development
