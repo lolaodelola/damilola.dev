@@ -9,3 +9,6 @@ prune:
 data_sources:
   - type: filesystem
     encoding: utf-8
+
+base_url: https://damilola.dev
+site_name: damilola in development
