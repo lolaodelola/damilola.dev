@@ -25,7 +25,7 @@ body {
   letter-spacing: 0.03em;
   color: mistyrose;
   font-family: 'Montserrat';
-  line-height: 2.1em;
+  line-height: 4em;
 }
 
 p, blockquote, ul {
@@ -138,6 +138,9 @@ article .post-title {
   line-height: 2rem;
 }
 
-/*.articles .index-post-heading {*/
-/*  max-width: 14em;*/
-/*}*/
+/* Large screens (desktops, laptops, etc) */
+@media (min-width: 992px) {
+  body {
+    line-height: 2.1em
+  }
+}
