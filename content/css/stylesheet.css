@@ -90,7 +90,7 @@ a:hover {
 }
 .articles .index-post-title {
   font-family: "Playfair Display";
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: 400;
 }
 
@@ -98,9 +98,7 @@ a:hover {
   font-weight: 300;
 }
 
-.articles .index-post-heading {
-  max-width: 14em;
-}
+
 
 .tags {
   list-style: none;
@@ -140,3 +138,7 @@ article .post-title {
   font-style: italic;
   line-height: 2rem;
 }
+
+/*.articles .index-post-heading {*/
+/*  max-width: 14em;*/
+/*}*/
