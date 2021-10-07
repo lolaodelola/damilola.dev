@@ -60,7 +60,7 @@ a:hover {
   font-family: 'Playfair Display';
   font-weight: 700;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: #b381b3;
 }
 
@@ -121,8 +121,7 @@ a:hover {
 
 article .post-title {
   font-family: 'Playfair Display';
-  /* font-style: italic; */
-  font-size: 4em;
+  font-size: 7em;
   font-weight: 800;
 }
 
