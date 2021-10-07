@@ -3,17 +3,17 @@ title: Home
 ---
 
 <header class="row">
-  <div class="col-12-sm">
+<!--  <div class="col">-->
     <h1 class="title m-auto">damilola in development</h1>
     <h2 class="subtitle m-auto">a living<span class="note-indicator">*</span> digital scrapbook</h2>
     <small class="note">*my thoughts, opinions and ideas can/will change.</small>
-  </div>
+<!--  </div>-->
 </header>
 
 <main class="articles col-md-11 offset-md-2">
   <% sorted_articles.each do |article| %>
     <section class="row">
-      <div class="col-sm-4 index-post-heading">
+      <div class="col-md-4 index-post-heading">
         <h2 class="index-post-title m-auto">
           <%= article[:title] %>
         </h2>
@@ -22,7 +22,7 @@ title: Home
         </p>
       </div>
 
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <p class="index-post-intro m-auto">
           <%= article[:extract] %>
         </p>
